@@ -18,5 +18,10 @@ pipeline{
                 echo "App started successfully"
             }
         }
+        stage("Test"){
+            steps{
+                sh 'node --eval "console.log(process.platform)'
+            }
+        }
     }
 }
